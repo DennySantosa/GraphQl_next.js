@@ -1,0 +1,14 @@
+{
+  "graphs\\[id].js -> ../../components/export_modal": {
+    "id": "graphs\\[id].js -> ../../components/export_modal",
+    "files": [
+      "static/chunks/components_export_modal_js.js"
+    ]
+  },
+  "graphs\\[id].js -> ../../components/import_modal": {
+    "id": "graphs\\[id].js -> ../../components/import_modal",
+    "files": [
+      "static/chunks/components_import_modal_js.js"
+    ]
+  }
+}
