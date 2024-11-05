@@ -1,0 +1,1 @@
+# GraphQl_next.js
