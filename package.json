@@ -33,6 +33,7 @@
         "react-hotkeys-hook": "^4.3.7",
         "react-querybuilder": "^6.5.1",
         "react-select": "^5.8.0",
+        "react-textarea-autosize": "^8.5.4",
         "sass": "^1.50.0",
         "styled-components": "^6.1.6",
         "unstated-next": "^1.1.0"
