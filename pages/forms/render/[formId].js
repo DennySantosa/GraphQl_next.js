@@ -28,7 +28,7 @@ export default function FormRenderPage() {
       setFormConfig((prev) => ({
         ...prev,
         task_data: targetForm?.task_data ?? [],
-        form_action_url: `${SERVER_URL}/backend/index.php/api/submitForm?formId=${formId}&tableName=${
+        form_action_url: `${SERVER_URL}:4000/backend/index.php/api/submitForm?formId=${formId}&tableName=${
           targetForm?.tableName ?? null
         }&redirect=${BASE_PATH + router.asPath ?? ""}`,
       }));
@@ -68,7 +68,7 @@ export default function FormRenderPage() {
 const getForm = async (id) => {
   try {
     const response = await fetch(
-      `${SERVER_URL}/backend/index.php/api/getForm`,
+      `${SERVER_URL}:4000/backend/index.php/api/getForm`,
       {
         method: "POST",
         headers: {
@@ -92,7 +92,7 @@ const getForm = async (id) => {
 const getApplication = async (id) => {
   try {
     const response = await fetch(
-      `${SERVER_URL}/backend/index.php/api/getApplication`,
+      `${SERVER_URL}:4000/backend/index.php/api/getApplication`,
       {
         method: "POST",
         headers: {
@@ -150,7 +150,7 @@ export async function getServerSideProps(ctx) {
       props: {
         formId,
         task_data: targetForm?.task_data ?? [],
-        form_action_url: `${SERVER_URL}/backend/index.php/api/submitForm?formId=${formId}&tableName=${
+        form_action_url: `${SERVER_URL}:4000/backend/index.php/api/submitForm?formId=${formId}&tableName=${
           targetForm?.tableName ?? null
         }&redirect=${fullURL ?? ""}`,
       },

@@ -83,7 +83,7 @@ export default function QueryRenderPage() {
 export const getQuery = async (id) => {
   try {
     const response = await fetch(
-      `${SERVER_URL}/backend/index.php/api/getQuery`,
+      `${SERVER_URL}:4000/backend/index.php/api/getQuery`,
       {
         method: "POST",
         headers: {
@@ -109,7 +109,7 @@ export const getQuery = async (id) => {
 const getApplication = async (id) => {
   try {
     const response = await fetch(
-      `${SERVER_URL}/backend/index.php/api/getApplication`,
+      `${SERVER_URL}:4000/backend/index.php/api/getApplication`,
       {
         method: "POST",
         headers: {

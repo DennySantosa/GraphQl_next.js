@@ -1,0 +1,11 @@
+diff --git a/node_modules/antd/es/date-picker/generatePicker/index.js b/node_modules/antd/es/date-picker/generatePicker/index.js
+index ba31588..b7ed041 100644
+--- a/node_modules/antd/es/date-picker/generatePicker/index.js
++++ b/node_modules/antd/es/date-picker/generatePicker/index.js
+@@ -1,7 +1,7 @@
+ "use client";
+ 
+-import generateRangePicker from './generateRangePicker';
+-import generateSinglePicker from './generateSinglePicker';
++import {generateRangePicker} from 'antd';
++import {generateSinglePicker} from 'antd';

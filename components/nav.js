@@ -41,7 +41,7 @@ export default function Nav({ setShowModal, setShowDrawer }) {
       const sqlValue = exportSQL(tableDict, linkDict, exportType);
       console.log(sqlValue);
       const response = await fetch(
-        `${SERVER_URL}/backend/index.php/api/mysqlquery`,
+        `${SERVER_URL}:4000/backend/index.php/api/mysqlquery`,
         {
           method: "POST",
           headers: {
@@ -74,7 +74,7 @@ export default function Nav({ setShowModal, setShowDrawer }) {
     let value = "";
     try {
       const response = await fetch(
-        `${SERVER_URL}/backend/index.php/api/mysqldump`,
+        `${SERVER_URL}:4000/backend/index.php/api/mysqldump`,
         {
           method: "POST",
           headers: {

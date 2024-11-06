@@ -36,7 +36,7 @@ export default function ExportModal({ showModal, onCloseModal }) {
 
     try {
       const response = await fetch(
-        `${SERVER_URL}/backend/index.php/api/mysqlquery`,
+        `${SERVER_URL}:4000/backend/index.php/api/mysqlquery`,
         {
           method: "POST",
           headers: {
